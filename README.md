@@ -35,3 +35,22 @@ reasoning_effort Options	Description
 low	Low effort reasoning. The model will use a small number of reasoning tokens.
 medium	Medium effort reasoning. The model will use a moderate number of reasoning tokens.
 high	High effort reasoning. The model will use a large number of reasoning tokens.
+
+Groq offers multiple models for content moderation:
+
+Policy-Following Models:
+
+GPT-OSS-Safeguard 20B
+ - A reasoning model from OpenAI for customizable Trust & Safety workflows with bring-your-own-policy capabilities
+Prebaked Safety Models:
+
+Llama Prompt Guard 2 (86M)
+ - A lightweight prompt injection detection model
+Llama Prompt Guard 2 (22M)
+ - An ultra-lightweight prompt injection detection model
+GPT-OSS-Safeguard 20B
+GPT-OSS-Safeguard 20B is OpenAI's first open weight reasoning model specifically trained for safety classification tasks. Unlike prebaked safety models with fixed taxonomies, GPT-OSS-Safeguard is a policy-following model that interprets and enforces your own written standards. This enables bring-your-own-policy Trust & Safety AI, where your own taxonomy, definitions, and thresholds guide classification decisions.
+
+Well-crafted policies unlock GPT-OSS-Safeguard's reasoning capabilities, enabling it to handle nuanced content, explain borderline decisions, and adapt to contextual factors without retraining. The model uses the Harmony response format, which separates reasoning into dedicated channels for auditability and transparency.
+
+Example: Prompt Injection Detection
